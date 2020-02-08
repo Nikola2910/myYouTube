@@ -3,9 +3,15 @@ var videoList = document.querySelector(".video-list");
 var key = "AIzaSyBsZlCiN7PJVrEH1UdPrTKJB26Sk_NV8ug";
 var loader = document.querySelector(".loader");
 var videoPreview = document.querySelector(".video-preview");
+var logo = document.querySelector("a");
+var searchField = document.querySelector(".search input");
+
+logo.addEventListener("click", function() {
+  videoList.innerHTML = "";
+  videoPreview.innerHTML = "";
+});
 
 function onSearch() {
-  var searchField = document.querySelector(".search input");
   videoPreview.innerHTML = "";
 
   searchField.value.trim() && getVideos(searchField.value);
@@ -97,3 +103,7 @@ function getRelatedVideos(id) {
 }
 
 searchBtn.addEventListener("click", onSearch);
+
+searchField.addEventListener("keyup", function(event) {
+  event.keyCode === 13 && onSearch();
+});
