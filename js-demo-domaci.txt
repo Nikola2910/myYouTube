@@ -1,0 +1,10 @@
+***** JS DEMO HOMEWORK *****
+
+
+WHAT SHOULD YOU DO ?
+
+- Try to recreate Youtube app we were building (you may watch video if you get stuck).
+
+BONUS:
+
+- Once video is opened, instead of showing a list of searched videos, show a list of 5 videos related to video opened (you can find URL and QUERY example for related videos in Youtube API documentation).

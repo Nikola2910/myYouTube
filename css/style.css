@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #121212;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  padding: 10px 0;
+  background-color: #242424;
+  box-shadow: 0 0 5px 5px #222;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  font-family: "Pathway Gothic One", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 50px;
+}
+
+header .main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search input {
+  width: 350px;
+  background-color: #111111;
+  height: 24px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  color: white;
+}
+
+.search button {
+  text-transform: uppercase;
+  height: 34px;
+  width: 80px;
+  background-color: #444444;
+  color: #888888;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+}
+
+/* VIDEOS */
+
+.video-preview {
+  margin: 30px 0;
+}
+
+.loader {
+  margin: 200px auto;
+  text-align: center;
+  display: none;
+}
+
+.loader img {
+  height: 200px;
+}
+
+.video-list div section {
+  height: 176px;
+  overflow: hidden;
+}
+
+h3 {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.img-wrapper {
+  min-width: 360px;
+}
+
+.img-wrapper img {
+  cursor: pointer;
+}
+
+.video-list {
+  padding: 0 0 60px;
+}
+
+.video-list > div {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.video-list > div > img {
+  margin-right: 20px;
+}
+
+.video-list .description {
+  color: #888;
+}
